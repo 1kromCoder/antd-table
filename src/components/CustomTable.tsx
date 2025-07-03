@@ -3,4 +3,3 @@ const CustomTable = () => {
 };
 
 export default CustomTable;
- 

@@ -64,18 +64,20 @@ const CustomTable: React.FC = () => {
 
   return (
     <div>
-      <Divider />
-
+      <Divider>Foydalanuvchilar</Divider>
       <Table<DataType>
         rowSelection={{ ...rowSelection }}
         columns={columns}
         dataSource={data}
       />
-        <div className="flex items-center justify-around">
-        <button className="bg-blue-500 text-white w-[190px] rounded-md p-2" onClick={() => navigate("/selected")}>
+      <div className="flex items-center justify-around">
+        <button
+          className="bg-blue-500 text-white w-[190px] rounded-md p-2"
+          onClick={() => navigate("/selected")}
+        >
           Tanlanganlarni ko‘rish
         </button>
-        </div>
+      </div>
     </div>
   );
 };
